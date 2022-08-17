@@ -23,6 +23,5 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/notes/index', [App\Http\Controllers\NotesController::class, 'index'])->name('notes.index');
 Route::get('/notes/delete/{id}', [App\Http\Controllers\NotesController::class, 'delete'])->name('notes.delete');
-Route::get('/notes/create', [App\Http\Controllers\NotesController::class, 'create'])->name('notes.create');
 Route::get('/notes/add', [App\Http\Controllers\NotesController::class, 'add'])->name('notes.add');
 Route::post('/notes/save', [App\Http\Controllers\NotesController::class, 'save'])->name('notes.save');
